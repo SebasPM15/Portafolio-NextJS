@@ -8,7 +8,12 @@ const socials = [
     {icon: <FaTwitter/>, path: 'https://x.com/MateoPilco'},
 ];
 
-const Social = ({containerStyles, iconStyles}) => {
+interface SocialProps {
+    containerStyles: string;
+    iconStyles: string;
+}
+
+const Social = ({containerStyles, iconStyles}: SocialProps) => {
     return (
         <div className={containerStyles}>
             {socials.map((item, index) => {
