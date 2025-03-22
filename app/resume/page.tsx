@@ -85,7 +85,7 @@ const education = {
     icon: '/assets/resume/cap.svg',
     title: "Mi educación",
     description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Formación académica en Bachillerato Internacional e Ingeniería en Software.",
     items: [
         {
             institution: "Instituto Nacional Mejía",

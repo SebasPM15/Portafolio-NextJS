@@ -18,9 +18,9 @@ const projects = [
         description:
         "Desarrollo de portafolio personal utilizando Next.js y Tailwind CSS.",
         stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }],
-        image: "/assets/work/thumb1.png",
+        image: "/assets/work/portafolio.png",
         live: "",
-        github: "",
+        github: "https://github.com/SebasPM15/Portafolio-NextJS",
     },
     {
         num: "02",
@@ -41,20 +41,42 @@ const projects = [
             { name: "Bootstrap" },
             { name: "NgxToastr" }
         ],
-        image: "/assets/work/thumb2.png",
+        image: "/assets/work/noImage.png",
         live: "",
         github: "https://github.com/MateoPm15/banco-app-pasantia"
     },
     {
         num: "03",
-        category: "frontend",
-        title: "project 3",
+        category: "fullstack",
+        title: "Aplicación Web de Gestión Financiera Personal",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        stack: [{ name: "Next.js 5"}, {name: "Tailwind.css"}],
-        image: "/assets/work/thumb3.png",
+        "Plataforma para gestionar ingresos, gastos y transferencias con backend en Spring Boot y base de datos en MySQL.",
+        stack: [
+            { name: "Java" },
+            { name: "Spring Boot" },
+            { name: "MySQL" },
+            { name: "JSP" }
+        ],
+        image: "/assets/work/noImage.png",
         live: "",
-        github: "",
+        github: "https://github.com/SebasPM15/Aplicacion-Web-de-Gestion-Financiera-Personal",
+    },
+    {
+        num: "04",
+        category: "mobile",
+        title: "Aplicación Móvil - Lista de Tareas (Agenda Estudiantil)",
+        description:
+        "Aplicación Android para la gestión de tareas con integración de Google Maps y almacenamiento offline en SQLite.",
+        stack: [
+            { name: "Kotlin" },
+            { name: "Jetpack Compose" },
+            { name: "SQLite" },
+            { name: "Google Maps API" },
+            { name: "Material Design" }
+        ],
+        image: "/assets/work/noImage.png",
+        live: "",
+        github: "https://github.com/SebasPM15/App-Lista-Tareas",
     },
 ]
 
@@ -87,6 +109,7 @@ const Work = () => {
                             group-hover:text-accent transition-all duration-500 capitalize">
                                 {project.category} project
                             </h2>
+                            <h3>Título: {project.title}</h3>
                             {/* project description */}
                             <p className="text-white/60">{project.description}</p>
                             {/* stack */}
