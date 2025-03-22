@@ -1,5 +1,4 @@
 import Link from "next/link";
-import path from "path";
 import {FaGithub, FaLinkedinIn, FaTwitter, FaFacebook} from "react-icons/fa"
 
 const socials = [

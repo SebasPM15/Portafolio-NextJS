@@ -1,3 +1,5 @@
+// Agrega esto al inicio del archivo
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 

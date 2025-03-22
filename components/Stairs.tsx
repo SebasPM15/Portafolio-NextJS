@@ -1,6 +1,4 @@
 import {motion} from "framer-motion"
-import { exit } from "process";
-
 //Variantes
 
 const stairAnimation = {

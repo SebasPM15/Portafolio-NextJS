@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import  React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType } from "swiper/types";
 import "swiper/css";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -82,7 +83,7 @@ const projects = [
 
 const Work = () => {
     const [project, setProject] = useState(projects[0]);
-    const handleSlideChange = (swiper) => {
+    const handleSlideChange = (swiper: SwiperType) => {
         //get current slide index
         const currentIndex = swiper.activeIndex;
         // update project state based on current slide index
@@ -194,6 +195,7 @@ const Work = () => {
                             xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                             btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] 
                             w-[44px] h-[44px] flex justify-center items-center transition-all"
+                            iconsStyles="text-white text-2xl"
                             />
                         </Swiper>
                     </div>
